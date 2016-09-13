@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">JaguarFund_Android</string>
+
+
+    <!--BaseUrl-->
+    <!--<string name="baseURL">"http://vsm.vilang.com/"</string>-->
+    <string name="baseURL">"http://vsmdemo.vilang.com/"</string>
+
+    <!--sharedPreferences-->
+    <string name="loginSharedPreferences">"accountInfo"</string>
+
+
+</resources>
