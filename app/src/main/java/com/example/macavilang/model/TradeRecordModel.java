@@ -148,21 +148,32 @@ public class TradeRecordModel {
     }
 
     public String getTradeType() {
+        if (tradeType.equals("1"))
+        {
+            _tradeType = "认购";
+        }else if (tradeType.equals("2"))
+        {
+            _tradeType = "申购";
+        }else if (tradeType.equals("3"))
+        {
+            _tradeType = "赎回";
+        }
         return _tradeType;
     }
 
     private String _tradeType;
     public void setTradeType(String tradeType) {
-        if (tradeType.equals(1))
-        {
-            _tradeType = "认购";
-        }else if (tradeType.equals(2))
-        {
-            _tradeType = "申购";
-        }else if (tradeType.equals(3))
-        {
-            _tradeType = "赎回";
-        }
+//        if (tradeType.equals("1"))
+//        {
+//            _tradeType = "认购";
+//        }else if (tradeType.equals("2"))
+//        {
+//            _tradeType = "申购";
+//        }else if (tradeType.equals("3"))
+//        {
+//            _tradeType = "赎回";
+//        }
+        this.tradeType = tradeType;
     }
 
     public String getUnitPrice() {
